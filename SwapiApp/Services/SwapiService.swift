@@ -47,8 +47,8 @@ struct DataService: SwapiService {
 	}
 	
 	func film(withId resourceId: String) -> AnyPublisher<Film, ServiceError> {
-	  let config = RequestConfiguration(resource: .films)
-	  return resource(request: Request(config: config, resourceId: resourceId))
+		let config = RequestConfiguration(resource: .films)
+		return resource(request: Request(config: config, resourceId: resourceId))
 	}
 	
 	func allPeople(page: String?) -> AnyPublisher<RootResult<People>, ServiceError> {
@@ -60,11 +60,11 @@ struct DataService: SwapiService {
 	}
 	
 	func allFilms(page: String?) -> AnyPublisher<RootResult<Film>, ServiceError> {
-	  guard let pageUrl = page else {
-		let config = RequestConfiguration(resource: .films)
-		return resource(request: Request(config: config))
-	  }
-	  return resource(request: Request(resourceUrl: pageUrl))
+		guard let pageUrl = page else {
+			let config = RequestConfiguration(resource: .films)
+			return resource(request: Request(config: config))
+		}
+		return resource(request: Request(resourceUrl: pageUrl))
 	}
 	
 	func people(fromResourceUrls urls: [String]) -> AnyPublisher<[People], ServiceError> {
@@ -73,7 +73,7 @@ struct DataService: SwapiService {
 	}
 	
 	func films(fromResourceUrls urls: [String]) -> AnyPublisher<[Film], ServiceError> {
-	  return resources(requests: urls.map { Request(resourceUrl: $0) })
+		return resources(requests: urls.map { Request(resourceUrl: $0) })
 	}
 	
 	func resources<T: RootData>(requests: [Request]) -> AnyPublisher<[T], ServiceError> {

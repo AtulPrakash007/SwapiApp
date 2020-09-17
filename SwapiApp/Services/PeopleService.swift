@@ -11,7 +11,7 @@ import Combine
 
 final class PeopleService: BindingService, ObservableObject {
 	let people: People
-		
+	
 	@Published public var films: [Film] = []
 	
 	private let dataService: SwapiService
@@ -32,19 +32,19 @@ final class PeopleService: BindingService, ObservableObject {
 	
 	func fetchAssociatedProperties() {
 		fetchFilms(
-		  from: dataService,
-		  with: people.films,
-		  receiveCompletion: { completion in
-			switch completion {
-			case .failure(let error):
-			  self.handleError(error)
-			  self.films = []
-			case .finished:
-			  break
-			}
+			from: dataService,
+			with: people.films,
+			receiveCompletion: { completion in
+				switch completion {
+					case .failure(let error):
+						self.handleError(error)
+						self.films = []
+					case .finished:
+						break
+				}
 		}, receiveValue: { films in
-		  self.films = films
+			self.films = films
 		})
-		.store(in: &disposables)
+			.store(in: &disposables)
 	}
 }

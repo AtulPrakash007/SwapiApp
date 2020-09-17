@@ -20,13 +20,13 @@ final class FilmRowViewModel {
 		film.title
 	}
 	
-//	var openingCrawl: String {
-//		film.openingCrawl
-//	}
+	//	var openingCrawl: String {
+	//		film.openingCrawl
+	//	}
 	
-//	var openingCrawlCount: Int {
-//		film.openingCrawl.count
-//	}
+	//	var openingCrawlCount: Int {
+	//		film.openingCrawl.count
+	//	}
 }
 
 struct FilmRowView: View {
@@ -35,7 +35,7 @@ struct FilmRowView: View {
 	
 	var body: some View {
 		Text(viewModel.title)
-//		Text(viewModel.openingCrawl)
-//		Text(viewModel.openingCrawlCount)
+		//		Text(viewModel.openingCrawl)
+		//		Text(viewModel.openingCrawlCount)
 	}
 }
