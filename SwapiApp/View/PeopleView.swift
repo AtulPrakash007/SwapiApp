@@ -32,7 +32,7 @@ struct PeopleView: View {
 extension PeopleView {
 	
 	var personalSection: some View {
-		Section {
+		Section(header: Text("People Info")) {
 			VStack(alignment: .leading, spacing: 12) {
 				Text(viewModel.name)
 				Text("Gender: \(viewModel.gender)")
