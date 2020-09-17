@@ -12,6 +12,7 @@ import Combine
 final class PeopleListViewModel: ObservableObject, Identifiable {
 	
 	@Published var peoples: [People] = []
+	@Published var loading = false
 	
 	private let dataService: SwapiService
 	
@@ -22,6 +23,7 @@ final class PeopleListViewModel: ObservableObject, Identifiable {
 	}
 	
 	func loadPeoples() {
+		self.loading = true
 		dataService.allPeople(page: nil)
 			.map { response in
 				response.results
@@ -33,12 +35,15 @@ final class PeopleListViewModel: ObservableObject, Identifiable {
 		.sink(receiveCompletion: { completion in
 			switch completion {
 				case .failure(let error):
+					self.loading = false
 					print("There was an error: \(error)")
 					self.peoples = []
 				case .finished:
+					self.loading = false
 					break
 			}
 		}, receiveValue: { peoples in
+			self.loading = false
 			self.peoples = peoples
 		})
 			.store(in: &disposables)

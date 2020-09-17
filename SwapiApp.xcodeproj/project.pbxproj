@@ -30,6 +30,7 @@
 		55A9FA042513812300F036E7 /* FilmRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A9FA032513812300F036E7 /* FilmRowViewModel.swift */; };
 		55A9FA0A25139D0D00F036E7 /* PeopleNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A9FA0925139D0D00F036E7 /* PeopleNameView.swift */; };
 		55A9FA0C25139D2800F036E7 /* PeopleNameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A9FA0B25139D2800F036E7 /* PeopleNameViewModel.swift */; };
+		55A9FA0E2513B4D000F036E7 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A9FA0D2513B4D000F036E7 /* ActivityIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		55A9FA032513812300F036E7 /* FilmRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmRowViewModel.swift; sourceTree = "<group>"; };
 		55A9FA0925139D0D00F036E7 /* PeopleNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleNameView.swift; sourceTree = "<group>"; };
 		55A9FA0B25139D2800F036E7 /* PeopleNameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleNameViewModel.swift; sourceTree = "<group>"; };
+		55A9FA0D2513B4D000F036E7 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 				55A9F9F92513745E00F036E7 /* PeopleListView.swift */,
 				55A9F9FF251375FD00F036E7 /* PeopleView.swift */,
 				55A9FA0925139D0D00F036E7 /* PeopleNameView.swift */,
+				55A9FA0D2513B4D000F036E7 /* ActivityIndicator.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				55A9F9F6251373CB00F036E7 /* PeopleListViewModel.swift in Sources */,
 				55A9F9DE2513493C00F036E7 /* Parsing.swift in Sources */,
 				55A9F9FE251374C500F036E7 /* PeopleService.swift in Sources */,
+				55A9FA0E2513B4D000F036E7 /* ActivityIndicator.swift in Sources */,
 				55A9F9BB25133F7500F036E7 /* AppDelegate.swift in Sources */,
 				55A9F9BD25133F7500F036E7 /* SceneDelegate.swift in Sources */,
 				55A9F9D7251348A700F036E7 /* Request.swift in Sources */,

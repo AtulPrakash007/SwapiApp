@@ -32,7 +32,11 @@ struct PeopleListView: View {
 	
 	var emptySection: some View {
 		Section {
-			Text("No People found")
+			if viewModel.loading {
+				Text("Loading...")
+			} else {
+				Text("No People found")
+			}
 		}
 	}
 	

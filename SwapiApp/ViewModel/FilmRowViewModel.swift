@@ -20,13 +20,9 @@ final class FilmRowViewModel {
 		film.title
 	}
 	
-	//	var openingCrawl: String {
-	//		film.openingCrawl
-	//	}
-	
-	//	var openingCrawlCount: Int {
-	//		film.openingCrawl.count
-	//	}
+	var openingCrawl: String {
+		film.openingCrawl
+	}
 }
 
 struct FilmRowView: View {
@@ -34,8 +30,11 @@ struct FilmRowView: View {
 	let viewModel: FilmRowViewModel
 	
 	var body: some View {
-		Text(viewModel.title)
-		//		Text(viewModel.openingCrawl)
-		//		Text(viewModel.openingCrawlCount)
+		VStack {
+			VStack(alignment: .leading) {
+				Text(viewModel.title)
+				Text("Crawl Count: \(viewModel.openingCrawl.count)")
+			}
+		}
 	}
 }
