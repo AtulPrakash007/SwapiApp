@@ -20,6 +20,7 @@ struct PeopleView: View {
 	var body: some View {
 		List {
 			personalSection
+			physicalAttributeSection
 			filmsSection
 		}
 		.navigationBarTitle(Text(viewModel.name), displayMode: .inline)
@@ -32,11 +33,23 @@ struct PeopleView: View {
 extension PeopleView {
 	
 	var personalSection: some View {
-		Section(header: Text("People Info")) {
+		Section(header: Text("Character")) {
 			VStack(alignment: .leading, spacing: 12) {
 				Text(viewModel.name)
-				Text("Gender: \(viewModel.gender)")
 				Text("Born: \(viewModel.birthYear)")
+			}
+		}
+	}
+	
+	var physicalAttributeSection: some View {
+		Section(header: Text("Physical Attributes")) {
+			VStack(alignment: .leading, spacing: 12) {
+				Text("Height: \(viewModel.height)")
+				Text("Mass: \(viewModel.mass)")
+				Text("Hair Color: \(viewModel.hair)")
+				Text("Skin Color: \(viewModel.skin)")
+				Text("Eye Color: \(viewModel.eyes)")
+				Text("Gender: \(viewModel.gender)")
 			}
 		}
 	}
