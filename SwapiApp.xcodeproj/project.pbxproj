@@ -28,6 +28,8 @@
 		55A9FA00251375FD00F036E7 /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A9F9FF251375FD00F036E7 /* PeopleView.swift */; };
 		55A9FA0225137EC900F036E7 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A9FA0125137EC900F036E7 /* Film.swift */; };
 		55A9FA042513812300F036E7 /* FilmRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A9FA032513812300F036E7 /* FilmRowViewModel.swift */; };
+		55A9FA0A25139D0D00F036E7 /* PeopleNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A9FA0925139D0D00F036E7 /* PeopleNameView.swift */; };
+		55A9FA0C25139D2800F036E7 /* PeopleNameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A9FA0B25139D2800F036E7 /* PeopleNameViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		55A9F9FF251375FD00F036E7 /* PeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
 		55A9FA0125137EC900F036E7 /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
 		55A9FA032513812300F036E7 /* FilmRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmRowViewModel.swift; sourceTree = "<group>"; };
+		55A9FA0925139D0D00F036E7 /* PeopleNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleNameView.swift; sourceTree = "<group>"; };
+		55A9FA0B25139D2800F036E7 /* PeopleNameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleNameViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +159,7 @@
 				55A9F9F5251373CB00F036E7 /* PeopleListViewModel.swift */,
 				55A9F9F7251373E600F036E7 /* PeopleViewModel.swift */,
 				55A9FA032513812300F036E7 /* FilmRowViewModel.swift */,
+				55A9FA0B25139D2800F036E7 /* PeopleNameViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -164,6 +169,7 @@
 			children = (
 				55A9F9F92513745E00F036E7 /* PeopleListView.swift */,
 				55A9F9FF251375FD00F036E7 /* PeopleView.swift */,
+				55A9FA0925139D0D00F036E7 /* PeopleNameView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -250,6 +256,8 @@
 				55A9F9E325134C2300F036E7 /* SwapiService.swift in Sources */,
 				55A9F9D02513430800F036E7 /* RootResult.swift in Sources */,
 				55A9F9FA2513745E00F036E7 /* PeopleListView.swift in Sources */,
+				55A9FA0A25139D0D00F036E7 /* PeopleNameView.swift in Sources */,
+				55A9FA0C25139D2800F036E7 /* PeopleNameViewModel.swift in Sources */,
 				55A9F9BF25133F7500F036E7 /* ContentView.swift in Sources */,
 				55A9FA00251375FD00F036E7 /* PeopleView.swift in Sources */,
 				55A9F9FC251374A700F036E7 /* People.swift in Sources */,

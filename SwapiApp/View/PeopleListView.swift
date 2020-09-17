@@ -40,7 +40,7 @@ struct PeopleListView: View {
 		Section {
 			ForEach(viewModel.peoples, id: \.self) { people in
 				NavigationLink(destination: self.viewModel.peopleView(forPeople: people)) {
-					PeopleView(viewModel: PeopleViewModel(graphService: PeopleService(people: people)))
+					PeopleNameView(viewModel: PeopleNameViewModel(people: people))
 				}
 			}
 		}
